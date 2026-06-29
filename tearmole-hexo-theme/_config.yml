@@ -1,0 +1,13 @@
+# tearmole Hexo theme config
+accent_color: '#b4756b'
+site_name: "\u6cea\u75e3"
+subtitle: "\u7528\u952e\u76d8\u8bb0\u5f55\u601d\u8003\uff0c\u7528\u4ee3\u7801\u8868\u8fbe\u60f3\u6cd5\u3002"
+footer_line: "\u5199\u5f97\u6162\u4e00\u70b9\uff0c\u60f3\u5f97\u4e45\u4e00\u70b9\u3002"
+motto: "\u6211\u4e3a\u7684\u662f\u6211\u7684\u5fc3"
+gitee_url: 'https://gitee.com/tear-moleTvT'
+recent_posts: 3
+per_page: 10
+nav:
+  "\u9996\u9875": /
+  "\u6587\u7ae0": /archives/
+  "\u5173\u4e8e": /about/

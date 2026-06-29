@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于 · 泪痣</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink:   { 700: '#2c3e4f', 800: '#1e2a36' },
+            muted: { 200: '#eef1f4', 300: '#dce3ea', 500: '#8b9aab' },
+          },
+          fontFamily: {
+            sans: ['Inter', '"Noto Sans SC"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #fff; --text: #374151; --ink7: #2c3e4f; --ink8: #1e2a36;
+      --m2: #eef1f4; --m3: #dce3ea; --m5: #8b9aab;
+    }
+    [data-theme="dark"] {
+      --bg: #18181a; --text: #c8ccd0; --ink7: #9ca3af; --ink8: #d1d5db;
+      --m2: #2a2a2c; --m3: #333; --m5: #6b7280;
+    }
+    body { background: var(--bg); color: var(--text); font-weight: 400; }
+    h1, h2, h3 { font-weight: 500; }
+    nav a { transition: color 0.15s; }
+    .link-underline {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .link-underline:hover { border-bottom-color: currentColor; }
+    time { font-style: italic; color: var(--m5); }
+    .mole-dot {
+      display: inline-block; width: 5px; height: 5px;
+      border-radius: 50%; background: #b4756b;
+      vertical-align: middle; flex-shrink: 0;
+    }
+    #theme-toggle {
+      background: none; border: none; cursor: pointer;
+      font-size: 14px; line-height: 1; padding: 2px 4px;
+      color: var(--m5);
+    }
+    #theme-toggle:hover { color: var(--ink7); }
+  </style>
+</head>
+<body class="font-sans text-base leading-[1.6] antialiased border-t-4 border-t-[#b4756b]">
+
+  <header class="border-b" style="border-color:var(--m2)">
+    <nav class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 tracking-tight text-lg" style="color:var(--ink8);font-weight:500">
+        泪痣
+        <span class="mole-dot"></span>
+      </a>
+      <div class="flex items-center gap-5 text-sm" style="color:var(--m5)">
+        <a href="index.html" style="color:var(--m5)">首页</a>
+        <a href="archive.html" style="color:var(--m5)">文章</a>
+        <a href="#" style="color:var(--m5)">关于</a>
+        <button id="theme-toggle" aria-label="切换主题">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-5 py-10">
+
+    <div class="flex items-center gap-4 mb-8">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23dce3ea'/%3E%3Ctext x='32' y='38' text-anchor='middle' font-size='18' fill='%238b9aab'%3E刘%3C/text%3E%3C/svg%3E"
+           alt="刘欣然" class="w-14 h-14 rounded-full object-cover shrink-0" />
+      <div>
+        <h1 style="font-size:1.25rem;color:var(--ink8)">刘欣然</h1>
+        <p class="text-sm mt-0.5 italic" style="color:var(--m5)">偶尔写写，偶尔想想。</p>
+      </div>
+    </div>
+
+    <section class="space-y-4 leading-relaxed">
+      <p>
+        我叫刘欣然，gitee 个人地址是
+        <a href="https://gitee.com/tear-moleTvT" class="link-underline" style="color:var(--ink7)">tear-moleTvT</a>。
+        平常喜欢读书。
+      </p>
+
+      <p>
+        早期接触 Python 和 SQL 做数据分析，后来逐步扩到前后端和一点命令行工具开发。
+        读书偏好偏现代诗、小说和技术随笔，偶尔也看社科类书籍。
+      </p>
+
+      <p>
+        写博客的初衷是整理自己的读书笔记，顺便让未来的自己少走弯路。
+        如果你恰好路过，欢迎看看。
+      </p>
+    </section>
+
+    <div class="flex items-center gap-4 mt-8 pt-6 border-t text-sm" style="border-color:var(--m2);color:var(--m5)">
+      <a href="https://gitee.com/tear-moleTvT"
+         class="inline-flex items-center gap-1.5 transition-colors" style="color:var(--m5)">
+        <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.14 5.5H4.32a.5.5 0 0 0-.5.5v.02l.84 3.17a.5.5 0 0 0 .49.38h3.94a.5.5 0 0 0 .49-.38l.84-3.17V6a.5.5 0 0 0-.5-.5z"/>
+        </svg>
+        Gitee
+      </a>
+    </div>
+
+    <p class="text-sm italic text-right mt-8 pt-4 border-t" style="color:var(--m5);border-color:var(--m2)">
+      我为的是我的心
+    </p>
+
+  </main>
+
+  <footer class="border-t mt-10" style="border-color:var(--m2)">
+    <div class="max-w-4xl mx-auto px-5 py-8 text-right">
+      <p class="text-xs tracking-wide pr-1" style="color:var(--m5)">
+        &copy; <span id="year"></span> 泪痣
+      </p>
+      <p class="text-xs mt-1.5 italic pr-1" style="color:var(--m5)">
+        我为的是我的心
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>木心《素履之往》 · 泪痣</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:{700:'#2c3e4f',800:'#1e2a36'},muted:{200:'#eef1f4',300:'#dce3ea',500:'#8b9aab'}},fontFamily:{sans:['Inter','"Noto Sans SC"','system-ui','-apple-system','sans-serif']}}}}
+</script>
+<style>
+:root{--bg:#fff;--text:#374151;--ink7:#2c3e4f;--ink8:#1e2a36;--m2:#eef1f4;--m3:#dce3ea;--m5:#8b9aab;--code:#f4f6f8}
+[data-theme=dark]{--bg:#18181a;--text:#c8ccd0;--ink7:#9ca3af;--ink8:#d1d5db;--m2:#2a2a2c;--m3:#333;--m5:#6b7280;--code:#1e1e20}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans SC",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;margin:0}
+h1,h2,h3{font-weight:500}
+nav a{transition:color .15s}
+.link-underline{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+.link-underline:hover{border-bottom-color:currentColor}
+time{font-style:italic;color:var(--m5)}
+.mole-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#b4756b;vertical-align:middle;flex-shrink:0}
+.dot-sep{display:inline-block;width:3px;height:3px;border-radius:50%;background:var(--m3);vertical-align:middle}
+#theme-toggle{background:none;border:none;cursor:pointer;font-size:14px;padding:2px 4px;color:var(--m5);transition:color .15s}
+#theme-toggle:hover{color:var(--ink7)}
+.post-body{line-height:1.7}.post-body p{margin:0 0 1.25em}
+.post-body h2{font-size:1.2rem;margin:2em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--m2);color:var(--ink8);font-weight:600}
+</style>
+</head>
+<body class="border-t-4 border-t-[#b4756b]">
+<header class="border-b" style="border-color:var(--m2)">
+<nav class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 tracking-tight text-lg" style="color:var(--ink8);font-weight:500">泪痣<span class="mole-dot"></span></a>
+<div class="flex items-center gap-5 text-sm" style="color:var(--m5)">
+<a href="index.html" style="color:var(--m5)">首页</a>
+<a href="archive.html" style="color:var(--m5)">文章</a>
+<a href="about.html" style="color:var(--m5)">关于</a>
+<button id="theme-toggle" aria-label="切换主题">🌙</button>
+</div>
+</nav>
+</header>
+<main class="max-w-2xl mx-auto px-5 py-10">
+<header class="mb-8">
+<h1 class="text-2xl leading-snug" style="color:var(--ink8)">木心《素履之往》</h1>
+<div class="flex items-center gap-3 mt-3 text-sm" style="color:var(--m5)">
+<time datetime="2026-05-30">2026-05-30</time>
+<span class="dot-sep"></span>
+<div class="flex flex-wrap gap-2">
+<a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">读书</a>
+<a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">随笔</a>
+</div>
+</div>
+</header>
+<div class="post-body">
+<p>木心的书适合放在床头。不是因为他难懂，是因为随便翻到哪一页都能读下去。</p>
+<h2>短句</h2>
+<p>《素履之往》全是短句，一段话往往就两三行。比如："强烈的爱，开始于强烈的恨。"你看完顿一下，好像懂了，又好像没全懂。</p>
+<p>他写东西不解释。一句顶一句，没有废话。读他的书有点像跟一个聪明人喝酒，他话不多，但每一句你都想记下来。</p>
+<h2>冷冷的态度</h2>
+<p>木心对很多事情的态度是冷的。不是冷漠，是看透了之后的那种淡。他说"生活的最佳状态是冷冷清清的风风火火"。</p>
+<p>这句话我想了很久。后来觉得他说的可能是——心里有火，面上不露。该做的事照做，但不必让全世界都知道你在做。</p>
+<h2>写在扉页上</h2>
+<p>这本书读完后我抄了几句话在扉页。其中一句是："万头攒动火树银花之处不必找我。"</p>
+<p>如果有人问我为什么喜欢木心，大概就是因为他替我说出了很多我说不出口的东西。</p>
+</div>
+</main>
+<footer class="border-t mt-10" style="border-color:var(--m2)">
+<div class="max-w-4xl mx-auto px-5 py-8 text-right">
+<p class="text-xs tracking-wide pr-1" style="color:var(--m5)">&copy; <span id="year"></span> 泪痣</p>
+<p class="text-xs mt-1.5 italic pr-1" style="color:var(--m5)">写得慢一点，想得久一点。</p>
+</div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>

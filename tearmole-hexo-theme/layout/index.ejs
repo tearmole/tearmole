@@ -1,0 +1,35 @@
+<div class="grid-2">
+<div>
+<div class="profile">
+<img src="<%= url_for(theme.avatar || '/images/avatar.svg') %>" alt="" class="profile-avatar">
+<div>
+<h1 class="profile-name"><%= theme.author_name || config.author || '' %></h1>
+<p class="profile-bio"><%= theme.subtitle || '' %></p>
+</div>
+</div>
+<section>
+<h2 class="section-title"><span class="mole-dot"></span> \u6700\u65b0\u6587\u7ae0</h2>
+<% if (page.posts && page.posts.length) { %>
+<% page.posts.each(function(post) { %>
+<article class="card">
+<h3><a href="<%= url_for(post.path) %>" class="link-u"><%= post.title %></a></h3>
+<p><%= post.excerpt ? strip_html(post.excerpt).substring(0,120) : '' %></p>
+<time><%= date(post.date, 'YYYY-MM-DD') %></time>
+</article>
+<% }) %>
+<% } else { %>
+<p style="color:var(--m5);font-size:.875rem">\u6682\u65e0\u6587\u7ae0</p>
+<% } %>
+</section>
+</div>
+<aside class="sidebar-tags">
+<h2 class="section-title"><span class="mole-dot"></span> \u6807\u7b7e</h2>
+<% if (site.tags && site.tags.length) { %>
+<div class="taglist">
+<% site.tags.each(function(tag) { %>
+<a href="<%= url_for(tag.path) %>" class="tag"><%= tag.name %></a>
+<% }) %>
+</div>
+<% } %>
+</aside>
+</div>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>卡尔维诺《看不见的城市》 · 泪痣</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:{700:'#2c3e4f',800:'#1e2a36'},muted:{200:'#eef1f4',300:'#dce3ea',500:'#8b9aab'}},fontFamily:{sans:['Inter','"Noto Sans SC"','system-ui','-apple-system','sans-serif']}}}}
+</script>
+<style>
+:root{--bg:#fff;--text:#374151;--ink7:#2c3e4f;--ink8:#1e2a36;--m2:#eef1f4;--m3:#dce3ea;--m5:#8b9aab;--code:#f4f6f8}
+[data-theme=dark]{--bg:#18181a;--text:#c8ccd0;--ink7:#9ca3af;--ink8:#d1d5db;--m2:#2a2a2c;--m3:#333;--m5:#6b7280;--code:#1e1e20}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans SC",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;margin:0}
+h1,h2,h3{font-weight:500}
+nav a{transition:color .15s}
+.link-underline{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+.link-underline:hover{border-bottom-color:currentColor}
+time{font-style:italic;color:var(--m5)}
+.mole-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#b4756b;vertical-align:middle;flex-shrink:0}
+.dot-sep{display:inline-block;width:3px;height:3px;border-radius:50%;background:var(--m3);vertical-align:middle}
+#theme-toggle{background:none;border:none;cursor:pointer;font-size:14px;padding:2px 4px;color:var(--m5);transition:color .15s}
+#theme-toggle:hover{color:var(--ink7)}
+.post-body{line-height:1.7}.post-body p{margin:0 0 1.25em}
+.post-body h2{font-size:1.2rem;margin:2em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--m2);color:var(--ink8);font-weight:600}
+</style>
+</head>
+<body class="border-t-4 border-t-[#b4756b]">
+<header class="border-b" style="border-color:var(--m2)">
+<nav class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 tracking-tight text-lg" style="color:var(--ink8);font-weight:500">泪痣<span class="mole-dot"></span></a>
+<div class="flex items-center gap-5 text-sm" style="color:var(--m5)">
+<a href="index.html" style="color:var(--m5)">首页</a>
+<a href="archive.html" style="color:var(--m5)">文章</a>
+<a href="about.html" style="color:var(--m5)">关于</a>
+<button id="theme-toggle" aria-label="切换主题">🌙</button>
+</div>
+</nav>
+</header>
+<main class="max-w-2xl mx-auto px-5 py-10">
+<header class="mb-8">
+<h1 class="text-2xl leading-snug" style="color:var(--ink8)">卡尔维诺《看不见的城市》</h1>
+<div class="flex items-center gap-3 mt-3 text-sm" style="color:var(--m5)">
+<time datetime="2026-05-15">2026-05-15</time>
+<span class="dot-sep"></span>
+<div class="flex flex-wrap gap-2">
+<a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">读书</a>
+<a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">随笔</a>
+</div>
+</div>
+</header>
+<div class="post-body">
+<p>马可·波罗给忽必烈讲了五十五个城市。每一个都不像真实存在的，但每一个又都像是你去过的地方。</p>
+<h2>城市与记忆</h2>
+<p>"你走了那么远的路，不是为了到达一个地方，而是为了记住一个地方。"</p>
+<p>书里有一个城市叫左拉，它的街道和建筑一旦被记录下来，城市本身就开始消失。读完这段我想了很久——是不是有些东西写下来之后就变了？</p>
+<p>可能记忆就是这样。你以为你在保存它，其实你每次回想都是在重新创造它。</p>
+<h2>城市与欲望</h2>
+<p>有一座建在湖底的城市，人们只能从水上看到它的倒影。真正的生活发生在倒影里。这大概是最浪漫也是最残忍的城市——你想要的永远在水面以下。</p>
+<p>忽必烈听完所有城市的故事之后沉默了很久。他对马可·波罗说："你讲了那么多城市，但从来没有提到你的故乡威尼斯。"</p>
+<p>马可·波罗回答说："我怕我一说起威尼斯，所有的城市都会变成它。"</p>
+<h2>读完以后</h2>
+<p>这本书很薄，但读得很慢。不是内容艰深，是你每隔几页就想停下来想一会儿。</p>
+<p>后来每次去一个陌生的城市，都会想起书里的某一段。城市不只是建筑物和街道，它是记忆、欲望、符号和名字的集合。卡尔维诺用一个极小的框架装下了极大的世界。</p>
+</div>
+</main>
+<footer class="border-t mt-10" style="border-color:var(--m2)">
+<div class="max-w-4xl mx-auto px-5 py-8 text-right">
+<p class="text-xs tracking-wide pr-1" style="color:var(--m5)">&copy; <span id="year"></span> 泪痣</p>
+<p class="text-xs mt-1.5 italic pr-1" style="color:var(--m5)">写得慢一点，想得久一点。</p>
+</div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>

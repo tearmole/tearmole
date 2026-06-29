@@ -1,0 +1,18 @@
+<h1 style="font-size:1.25rem;color:var(--ink8);margin-bottom:1.5rem">\u5f52\u6863</h1>
+<section>
+<% if (page.posts && page.posts.length) { %>
+<ol class="post-list">
+<% page.posts.each(function(post) { %>
+<li>
+<a href="<%= url_for(post.path) %>" class="link-u"><%= post.title %></a>
+<time style="display:block;font-size:.75rem;margin-top:.25rem"><%= date(post.date, 'YYYY-MM-DD') %></time>
+<% if (post.excerpt) { %>
+<p><%= strip_html(post.excerpt).substring(0,120) %></p>
+<% } %>
+</li>
+<% }) %>
+</ol>
+<% } else { %>
+<p style="color:var(--m5);font-size:.875rem">\u6682\u65e0\u6587\u7ae0</p>
+<% } %>
+</section>

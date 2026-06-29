@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>归档 · 泪痣</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{ink:{700:'#2c3e4f',800:'#1e2a36'},muted:{200:'#eef1f4',300:'#dce3ea',500:'#8b9aab'}},fontFamily:{sans:['Inter','"Noto Sans SC"','system-ui','-apple-system','sans-serif']}}}}</script>
+<style>
+:root{--bg:#fff;--text:#374151;--ink7:#2c3e4f;--ink8:#1e2a36;--m2:#eef1f4;--m3:#dce3ea;--m5:#8b9aab}
+[data-theme=dark]{--bg:#18181a;--text:#c8ccd0;--ink7:#9ca3af;--ink8:#d1d5db;--m2:#2a2a2c;--m3:#333;--m5:#6b7280}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans SC",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:500}
+nav a{transition:color .15s}
+.link-underline{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+.link-underline:hover{border-bottom-color:currentColor}
+time{font-style:italic;color:var(--m5)}
+.mole-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#b4756b;vertical-align:middle;flex-shrink:0}
+#theme-toggle{background:none;border:none;cursor:pointer;font-size:14px;line-height:1;padding:2px 4px;color:var(--m5);transition:color .15s}
+#theme-toggle:hover{color:var(--ink7)}
+</style>
+</head>
+<body class="font-sans text-base leading-[1.6] antialiased border-t-4 border-t-[#b4756b]">
+<header class="border-b" style="border-color:var(--m2)">
+<nav class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 tracking-tight text-lg" style="color:var(--ink8);font-weight:500">泪痣<span class="mole-dot"></span></a>
+<div class="flex items-center gap-5 text-sm" style="color:var(--m5)">
+<a href="index.html" style="color:var(--m5)">首页</a>
+<a href="#" style="color:var(--m5)">文章</a>
+<a href="about.html" style="color:var(--m5)">关于</a>
+<button id="theme-toggle" aria-label="切换主题">🌙</button>
+</div>
+</nav>
+</header>
+<main class="max-w-2xl mx-auto px-5 py-10">
+<h1 style="font-size:1.25rem;color:var(--ink8);margin-bottom:1.5rem">归档</h1>
+<section>
+<ol class="divide-y" style="border-color:var(--m2)">
+<li class="py-4" style="border-color:var(--m2)">
+<a href="post.html" class="link-underline" style="color:var(--ink7);font-weight:500">读《地下室手记》</a>
+<time class="block text-xs mt-1">2026-06-28</time>
+<p class="text-sm mt-1 leading-snug line-clamp-2" style="color:var(--m5)">断断续续读了两个月。不是这本书难读，是读几页就得放下缓一缓。</p>
+</li>
+<li class="py-4" style="border-color:var(--m2)">
+<a href="post-haizi.html" class="link-underline" style="color:var(--ink7);font-weight:500">海子诗选：春天之外</a>
+<time class="block text-xs mt-1">2026-06-21</time>
+<p class="text-sm mt-1 leading-snug line-clamp-2" style="color:var(--m5)">大多数人知道海子是因为那首《面朝大海，春暖花开》。我以前也是。</p>
+</li>
+<li class="py-4" style="border-color:var(--m2)">
+<a href="post-lishangyin.html" class="link-underline" style="color:var(--ink7);font-weight:500">读李商隐，随便写几句</a>
+<time class="block text-xs mt-1">2026-06-14</time>
+<p class="text-sm mt-1 leading-snug line-clamp-2" style="color:var(--m5)">唐诗里越读越读不懂的，李商隐排第一。不是字面难懂，是你总觉得他话里有话，但死活猜不透那层话是什么。</p>
+</li>
+<li class="py-4" style="border-color:var(--m2)">
+<a href="post-luxun.html" class="link-underline" style="color:var(--ink7);font-weight:500">再读鲁迅《野草》</a>
+<time class="block text-xs mt-1">2026-06-07</time>
+<p class="text-sm mt-1 leading-snug line-clamp-2" style="color:var(--m5)">中学课本里学过《野草》的选段，当时觉得就是散文。前阵子重读才发现——这哪里是散文，每一篇都是诗。</p>
+</li>
+<li class="py-4" style="border-color:var(--m2)">
+<a href="post-muxin.html" class="link-underline" style="color:var(--ink7);font-weight:500">木心《素履之往》</a>
+<time class="block text-xs mt-1">2026-05-30</time>
+<p class="text-sm mt-1 leading-snug line-clamp-2" style="color:var(--m5)">木心的书适合放在床头。不是因为他难懂，是因为随便翻到哪一页都能读下去。</p>
+</li>
+<li class="py-4" style="border-color:var(--m2)">
+<a href="post-pessoa.html" class="link-underline" style="color:var(--ink7);font-weight:500">佩索阿《惶然录》</a>
+<time class="block text-xs mt-1">2026-05-22</time>
+<p class="text-sm mt-1 leading-snug line-clamp-2" style="color:var(--m5)">费尔南多·佩索阿是葡萄牙人，在一家公司做小职员，一辈子没怎么离开过里斯本。他死后别人才发现，他用各种笔名写了上万页的东西。</p>
+</li>
+<li class="py-4" style="border-color:var(--m2)">
+<a href="post-calvino.html" class="link-underline" style="color:var(--ink7);font-weight:500">卡尔维诺《看不见的城市》</a>
+<time class="block text-xs mt-1">2026-05-15</time>
+<p class="text-sm mt-1 leading-snug line-clamp-2" style="color:var(--m5)">马可·波罗给忽必烈讲了五十五个城市。每一个都不像真实存在的，但每一个又都像是你去过的地方。</p>
+</li>
+</ol>
+</section>
+</main>
+<footer class="border-t mt-10" style="border-color:var(--m2)">
+<div class="max-w-4xl mx-auto px-5 py-8 text-right">
+<p class="text-xs tracking-wide pr-1" style="color:var(--m5)">&copy; <span id="year"></span> 泪痣</p>
+<p class="text-xs mt-1.5 italic pr-1" style="color:var(--m5)">我为的是我的心。</p>
+</div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>

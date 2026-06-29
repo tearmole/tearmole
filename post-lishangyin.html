@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>读李商隐，随便写几句 · 泪痣</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:{700:'#2c3e4f',800:'#1e2a36'},muted:{200:'#eef1f4',300:'#dce3ea',500:'#8b9aab'}},fontFamily:{sans:['Inter','"Noto Sans SC"','system-ui','-apple-system','sans-serif']}}}}
+</script>
+<style>
+:root{--bg:#fff;--text:#374151;--ink7:#2c3e4f;--ink8:#1e2a36;--m2:#eef1f4;--m3:#dce3ea;--m5:#8b9aab;--code:#f4f6f8}
+[data-theme=dark]{--bg:#18181a;--text:#c8ccd0;--ink7:#9ca3af;--ink8:#d1d5db;--m2:#2a2a2c;--m3:#333;--m5:#6b7280;--code:#1e1e20}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans SC",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;margin:0}
+h1,h2,h3{font-weight:500}
+nav a{transition:color .15s}
+.link-underline{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+.link-underline:hover{border-bottom-color:currentColor}
+time{font-style:italic;color:var(--m5)}
+.mole-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#b4756b;vertical-align:middle;flex-shrink:0}
+.dot-sep{display:inline-block;width:3px;height:3px;border-radius:50%;background:var(--m3);vertical-align:middle}
+#theme-toggle{background:none;border:none;cursor:pointer;font-size:14px;padding:2px 4px;color:var(--m5);transition:color .15s}
+#theme-toggle:hover{color:var(--ink7)}
+.post-body{line-height:1.7}.post-body p{margin:0 0 1.25em}
+.post-body h2{font-size:1.2rem;margin:2em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--m2);color:var(--ink8);font-weight:600}
+</style>
+</head>
+<body class="border-t-4 border-t-[#b4756b]">
+<header class="border-b" style="border-color:var(--m2)">
+<nav class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 tracking-tight text-lg" style="color:var(--ink8);font-weight:500">泪痣<span class="mole-dot"></span></a>
+<div class="flex items-center gap-5 text-sm" style="color:var(--m5)">
+<a href="index.html" style="color:var(--m5)">首页</a>
+<a href="archive.html" style="color:var(--m5)">文章</a>
+<a href="about.html" style="color:var(--m5)">关于</a>
+<button id="theme-toggle" aria-label="切换主题">🌙</button>
+</div>
+</nav>
+</header>
+<main class="max-w-2xl mx-auto px-5 py-10">
+<header class="mb-8">
+<h1 class="text-2xl leading-snug" style="color:var(--ink8)">读李商隐，随便写几句</h1>
+<div class="flex items-center gap-3 mt-3 text-sm" style="color:var(--m5)">
+<time datetime="2026-06-14">2026-06-14</time>
+<span class="dot-sep"></span>
+<div class="flex flex-wrap gap-2">
+<a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">诗</a>
+<a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">读书</a>
+</div>
+</div>
+</header>
+<div class="post-body">
+<p>唐诗里越读越读不懂的，李商隐排第一。不是字面难懂，是你总觉得他话里有话，但死活猜不透那层话是什么。</p>
+<h2>无题</h2>
+<p>"昨夜星辰昨夜风，画楼西畔桂堂东。"这两句背了好多年，一直觉得美，但从来没细想过到底在说什么。后来看注解说可能是写一次秘密约会，又有人说是在写官场上的某个人。谁也说不准。</p>
+<p>但正因为说不准，才反复读。每次读都有不同的画面。这是李商隐最厉害的地方——他把话说一半，另一半留给你。</p>
+<h2>锦瑟</h2>
+<p>《锦瑟》可能是最有名的一首，也是争议最大的一首。"此情可待成追忆，只是当时已惘然。"</p>
+<p>有人说是悼念亡妻，有人说是自伤身世，有人说是写音乐。我觉得可能都有。好的诗不需要唯一答案，它像一面镜子，你带什么情绪进去就看见什么。</p>
+<h2>晚唐的雨</h2>
+<p>他的诗里经常下雨。"巴山夜雨涨秋池"——你几乎能听见那个声音。秋夜的雨落在池塘里，一个人坐在屋里等人。那封信什么时候到？不知道。</p>
+<p>晚唐的诗人好像都在等什么东西。李商隐等了一辈子，写了一大堆不会寄出去的信。我们读到现在，大概就是偷偷看了那些信。</p>
+</div>
+</main>
+<footer class="border-t mt-10" style="border-color:var(--m2)">
+<div class="max-w-4xl mx-auto px-5 py-8 text-right">
+<p class="text-xs tracking-wide pr-1" style="color:var(--m5)">&copy; <span id="year"></span> 泪痣</p>
+<p class="text-xs mt-1.5 italic pr-1" style="color:var(--m5)">流年多恨饮孤独</p>
+</div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>读《地下室手记》 · 泪痣</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink:   { 700: '#2c3e4f', 800: '#1e2a36' },
+            muted: { 200: '#eef1f4', 300: '#dce3ea', 500: '#8b9aab' },
+          },
+          fontFamily: {
+            sans: ['Inter', '"Noto Sans SC"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #fff; --text: #374151; --ink7: #2c3e4f; --ink8: #1e2a36;
+      --m2: #eef1f4; --m3: #dce3ea; --m5: #8b9aab; --code: #f4f6f8;
+    }
+    [data-theme="dark"] {
+      --bg: #18181a; --text: #c8ccd0; --ink7: #9ca3af; --ink8: #d1d5db;
+      --m2: #2a2a2c; --m3: #333; --m5: #6b7280; --code: #1e1e20;
+    }
+    body { background: var(--bg); color: var(--text); font-weight: 400; }
+    h1, h2, h3 { font-weight: 500; }
+    nav a { transition: color 0.15s; }
+    .link-underline {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .link-underline:hover { border-bottom-color: currentColor; }
+    time { font-style: italic; color: var(--m5); }
+    .mole-dot {
+      display: inline-block; width: 5px; height: 5px;
+      border-radius: 50%; background: #b4756b;
+      vertical-align: middle; flex-shrink: 0;
+    }
+    .dot-sep {
+      display: inline-block; width: 3px; height: 3px;
+      border-radius: 50%; background: var(--m3);
+      vertical-align: middle;
+    }
+    #theme-toggle {
+      background: none; border: none; cursor: pointer;
+      font-size: 14px; line-height: 1; padding: 2px 4px;
+      color: var(--m5);
+    }
+    #theme-toggle:hover { color: var(--ink7); }
+    .post-body { line-height: 1.7; }
+    .post-body p { margin-bottom: 1.25em; }
+    .post-body h2 {
+      font-size: 1.2rem; margin-top: 2em; margin-bottom: 0.6em;
+      padding-bottom: 0.3em; border-bottom: 1px solid var(--m2);
+      color: var(--ink8); font-weight: 600;
+    }
+    .post-body h3 {
+      font-size: 1.05rem; margin-top: 1.6em; margin-bottom: 0.5em;
+      color: var(--ink7); font-weight: 600;
+    }
+    .post-body blockquote {
+      border-left: 3px solid var(--m5); background: var(--m2);
+      padding: 0.6em 1em; margin-bottom: 1.25em;
+      border-radius: 0 4px 4px 0; font-size: 0.9375em;
+    }
+    .post-body blockquote p { margin-bottom: 0; }
+    #back-top {
+      position: fixed; bottom: 1.5rem; right: 1.5rem;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--ink7); color: #fff; font-size: 0.875rem;
+      line-height: 32px; text-align: center; opacity: 0.3;
+      cursor: pointer; transition: opacity 0.2s;
+      user-select: none; z-index: 50; display: none;
+    }
+    #back-top:hover { opacity: 0.6; }
+  </style>
+</head>
+<body class="font-sans text-base leading-[1.6] antialiased border-t-4 border-t-[#b4756b]">
+  <header class="border-b" style="border-color:var(--m2)">
+    <nav class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 tracking-tight text-lg" style="color:var(--ink8);font-weight:500">
+        泪痣
+        <span class="mole-dot"></span>
+      </a>
+      <div class="flex items-center gap-5 text-sm" style="color:var(--m5)">
+        <a href="index.html" style="color:var(--m5)">首页</a>
+        <a href="archive.html" style="color:var(--m5)">文章</a>
+        <a href="about.html" style="color:var(--m5)">关于</a>
+        <button id="theme-toggle" aria-label="切换主题">🌙</button>
+      </div>
+    </nav>
+  </header>
+  <main class="max-w-2xl mx-auto px-5 py-10">
+    <header class="mb-8">
+      <h1 class="text-2xl leading-snug" style="color:var(--ink8)"><!-- 标题可替换 -->读《地下室手记》</h1>
+      <div class="flex items-center gap-3 mt-3 text-sm" style="color:var(--m5)">
+        <time datetime="2026-06-28">2026-06-28</time>
+        <span class="dot-sep"></span>
+        <div class="flex flex-wrap gap-2">
+          <a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">读书</a>
+          <a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">随笔</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-body"><!-- 正文从这里开始，可整体替换 -->
+      <p>断断续续读了两个月。不是这本书难读，是读几页就得放下缓一缓。</p>
+      <p>地下室人那种"我什么都知道，但我偏不"的状态，太熟悉了。熟悉到不舒服。</p>
+      <h2>关于"自我意识过剩"</h2>
+      <p>书里有一大段，大意是说——一个人越有自我意识，就越觉得自己不怎么样。反而那些不怎么想的人，活得理直气壮。</p>
+      <p>我想了想自己干过的事：写个朋友圈要删三遍措辞，发完又觉得矫情。这不就是地下室人吗。</p>
+      <blockquote>
+        <p>我之所以是个不中用的人，是因为我比谁都看得清楚。—— 地下室人</p>
+      </blockquote>
+      <h2>二乘二等于四</h2>
+      <p>他反对"理性至上"那一段很精彩。说人类有时候就是想干点蠢事，不为别的，就为了证明"我可以不按你说的来"。</p>
+      <p>放在今天就是——明知熬夜不好，偏要熬。不是不知道，是不想被"应该"管着。</p>
+      <p>陀翁一百多年前就把这种心理写得明明白白了。可怕的是，读完之后发现自己一点长进都没有。</p>
+      <h2>其他零碎</h2>
+      <p>书的第二部分是几段往事，读起来不像小说，更像一个人坐在你对面絮絮叨叨。他说到和阿波罗的冲突那段，荒唐又真实——为了一个仆人的眼光，能跟自己较劲好几天。</p>
+      <p>我大概也是这种人。只是不敢写出来而已。</p>
+      <p>翻完最后一页，在扉页写了四个字：慎独。然后第二天就忘了。</p>
+    </div>
+  </main>
+  <footer class="border-t mt-10" style="border-color:var(--m2)">
+    <div class="max-w-4xl mx-auto px-5 py-8 text-right">
+      <p class="text-xs tracking-wide pr-1" style="color:var(--m5)">
+        &copy; <span id="year"></span> 泪痣
+      </p>
+      <p class="text-xs mt-1.5 italic pr-1" style="color:var(--m5)">
+        写得慢一点，想得久一点。
+      </p>
+    </div>
+  </footer>
+  <div id="back-top">↑</div>
+  <script src="scripts.js"></script>
+</body>
+</html>

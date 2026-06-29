@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>泪痣 · 个人博客</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{ink:{700:'#2c3e4f',800:'#1e2a36'},muted:{200:'#eef1f4',300:'#dce3ea',500:'#8b9aab'}},fontFamily:{sans:['Inter','"Noto Sans SC"','system-ui','-apple-system','sans-serif']}}}}</script>
+<style>
+:root{--bg:#fff;--text:#374151;--ink7:#2c3e4f;--ink8:#1e2a36;--m2:#eef1f4;--m3:#dce3ea;--m5:#8b9aab}
+[data-theme=dark]{--bg:#18181a;--text:#c8ccd0;--ink7:#9ca3af;--ink8:#d1d5db;--m2:#2a2a2c;--m3:#333;--m5:#6b7280}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans SC",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:500}
+nav a{transition:color .15s}
+.link-underline{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+.link-underline:hover{border-bottom-color:currentColor}
+time{font-style:italic;color:var(--m5)}
+.mole-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#b4756b;vertical-align:middle;flex-shrink:0}
+#theme-toggle{background:none;border:none;cursor:pointer;font-size:14px;line-height:1;padding:2px 4px;color:var(--m5);transition:color .15s}
+#theme-toggle:hover{color:var(--ink7)}
+</style>
+</head>
+<body class="font-sans text-base leading-[1.6] antialiased border-t-4 border-t-[#b4756b]">
+<header class="border-b" style="border-color:var(--m2)">
+<nav class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
+<a href="/" class="flex items-center gap-2 tracking-tight text-lg" style="color:var(--ink8);font-weight:500">泪痣<span class="mole-dot"></span></a>
+<div class="flex items-center gap-5 text-sm" style="color:var(--m5)">
+<a href="#" style="color:var(--ink7)">首页</a>
+<a href="archive.html" style="color:var(--m5)">文章</a>
+<a href="about.html" style="color:var(--m5)">关于</a>
+<button id="theme-toggle" aria-label="切换主题">🌙</button>
+</div>
+</nav>
+</header>
+<main class="max-w-4xl mx-auto px-5 py-10 grid grid-cols-1 md:grid-cols-[1fr_14rem] gap-10">
+<div>
+<section class="flex items-center gap-4 mb-10 pb-6 border-b" style="border-color:var(--m2)">
+<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%23dce3ea'/%3E%3Ctext x='32' y='38' text-anchor='middle' font-size='20' fill='%238b9aab'%3E⌨%3C/text%3E%3C/svg%3E" alt="头像" class="w-14 h-14 rounded object-cover shrink-0" />
+<div>
+<h1 style="color:var(--ink8);font-size:1.25rem">写代码的人</h1>
+<p class="mt-0.5 italic text-sm" style="color:var(--m5)">用键盘记录思考，用代码表达想法。</p>
+</div>
+</section>
+<section>
+<h2 class="text-sm uppercase tracking-wider mb-4 flex items-center gap-2" style="color:var(--m5)"><span class="mole-dot"></span> 最新文章</h2>
+<div class="space-y-4">
+<article class="border rounded p-4" style="border-color:var(--m2);background:var(--bg)">
+<h3 style="font-weight:500"><a href="post.html" class="link-underline" style="color:var(--ink7)">读《地下室手记》</a></h3>
+<p class="text-sm mt-1 line-clamp-2" style="color:var(--m5)">断断续续读了两个月。不是这本书难读，是读几页就得放下缓一缓。</p>
+<time class="text-xs mt-2 block">2026-06-28</time>
+</article>
+<article class="border rounded p-4" style="border-color:var(--m2);background:var(--bg)">
+<h3 style="font-weight:500"><a href="post-haizi.html" class="link-underline" style="color:var(--ink7)">海子诗选：春天之外</a></h3>
+<p class="text-sm mt-1 line-clamp-2" style="color:var(--m5)">大多数人知道海子是因为那首《面朝大海，春暖花开》。我以前也是。</p>
+<time class="text-xs mt-2 block">2026-06-21</time>
+</article>
+<article class="border rounded p-4" style="border-color:var(--m2);background:var(--bg)">
+<h3 style="font-weight:500"><a href="post-lishangyin.html" class="link-underline" style="color:var(--ink7)">读李商隐，随便写几句</a></h3>
+<p class="text-sm mt-1 line-clamp-2" style="color:var(--m5)">唐诗里越读越读不懂的，李商隐排第一。不是字面难懂，是你总觉得他话里有话，但死活猜不透那层话是什么。</p>
+<time class="text-xs mt-2 block">2026-06-14</time>
+</article>
+</div>
+</section>
+</div>
+<aside class="hidden md:block">
+<h2 class="text-sm uppercase tracking-wider mb-4 flex items-center gap-2" style="color:var(--m5)"><span class="mole-dot"></span> 标签</h2>
+<div class="flex flex-wrap gap-2">
+<a href="#" class="text-xs px-2.5 py-1 rounded transition-colors" style="background:var(--m2);color:var(--m5)">读书</a>
+<a href="#" class="text-xs px-2.5 py-1 rounded transition-colors" style="background:var(--m2);color:var(--m5)">随笔</a>
+<a href="#" class="text-xs px-2.5 py-1 rounded transition-colors" style="background:var(--m2);color:var(--m5)">诗</a>
+<a href="#" class="text-xs px-2.5 py-1 rounded transition-colors" style="background:var(--m2);color:var(--m5)">小说</a>
+</div>
+</aside>
+</main>
+<footer class="border-t mt-10" style="border-color:var(--m2)">
+<div class="max-w-4xl mx-auto px-5 py-8 text-right">
+<p class="text-xs tracking-wide pr-1" style="color:var(--m5)">&copy; <span id="year"></span> 泪痣</p>
+<p class="text-xs mt-1.5 italic pr-1" style="color:var(--m5)">always online</p>
+</div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>

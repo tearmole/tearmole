@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title><%= page.title || theme.site_name || config.title %></title>
+<link rel="stylesheet" href="<%= url_for('/css/style.css') %>">
+</head>
+<body>
+<header class="header">
+<nav class="container nav">
+<a href="<%= url_for('/') %>" class="nav-brand">
+<%= theme.site_name || config.title %>
+<span class="mole-dot"></span>
+</a>
+<div class="nav-links">
+<% if (theme.nav) { %>
+<% for (var name in theme.nav) { %>
+<a href="<%= url_for(theme.nav[name]) %>"><%= name %></a>
+<% } %>
+<% } %>
+<button id="theme-toggle" aria-label="\u5207\u6362\u4e3b\u9898">\ud83c\udf19</button>
+</div>
+</nav>
+</header>
+<main class="container main<% if (page.layout === 'post' || page.layout === 'archive') { %> container--narrow<% } %>">
+<%- body %>
+</main>
+<footer class="footer">
+<div class="container">
+<p>&copy; <span id="year"></span> <%= theme.footer_line ? theme.site_name : (theme.site_name || config.title) %></p>
+<p><%= theme.footer_line || '\u5199\u5f97\u6162\u4e00\u70b9\uff0c\u60f3\u5f97\u4e45\u4e00\u70b9\u3002' %></p>
+</div>
+</footer>
+<div class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">\u2191</div>
+<script src="<%= url_for('/js/scripts.js') %>"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>佩索阿《惶然录》 · 泪痣</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{ink:{700:'#2c3e4f',800:'#1e2a36'},muted:{200:'#eef1f4',300:'#dce3ea',500:'#8b9aab'}},fontFamily:{sans:['Inter','"Noto Sans SC"','system-ui','-apple-system','sans-serif']}}}}
+</script>
+<style>
+:root{--bg:#fff;--text:#374151;--ink7:#2c3e4f;--ink8:#1e2a36;--m2:#eef1f4;--m3:#dce3ea;--m5:#8b9aab;--code:#f4f6f8}
+[data-theme=dark]{--bg:#18181a;--text:#c8ccd0;--ink7:#9ca3af;--ink8:#d1d5db;--m2:#2a2a2c;--m3:#333;--m5:#6b7280;--code:#1e1e20}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans SC",system-ui,-apple-system,sans-serif;font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;margin:0}
+h1,h2,h3{font-weight:500}
+nav a{transition:color .15s}
+.link-underline{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+.link-underline:hover{border-bottom-color:currentColor}
+time{font-style:italic;color:var(--m5)}
+.mole-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#b4756b;vertical-align:middle;flex-shrink:0}
+.dot-sep{display:inline-block;width:3px;height:3px;border-radius:50%;background:var(--m3);vertical-align:middle}
+#theme-toggle{background:none;border:none;cursor:pointer;font-size:14px;padding:2px 4px;color:var(--m5);transition:color .15s}
+#theme-toggle:hover{color:var(--ink7)}
+.post-body{line-height:1.7}.post-body p{margin:0 0 1.25em}
+.post-body h2{font-size:1.2rem;margin:2em 0 .6em;padding-bottom:.3em;border-bottom:1px solid var(--m2);color:var(--ink8);font-weight:600}
+</style>
+</head>
+<body class="border-t-4 border-t-[#b4756b]">
+<header class="border-b" style="border-color:var(--m2)">
+<nav class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2 tracking-tight text-lg" style="color:var(--ink8);font-weight:500">泪痣<span class="mole-dot"></span></a>
+<div class="flex items-center gap-5 text-sm" style="color:var(--m5)">
+<a href="index.html" style="color:var(--m5)">首页</a>
+<a href="archive.html" style="color:var(--m5)">文章</a>
+<a href="about.html" style="color:var(--m5)">关于</a>
+<button id="theme-toggle" aria-label="切换主题">🌙</button>
+</div>
+</nav>
+</header>
+<main class="max-w-2xl mx-auto px-5 py-10">
+<header class="mb-8">
+<h1 class="text-2xl leading-snug" style="color:var(--ink8)">佩索阿《惶然录》</h1>
+<div class="flex items-center gap-3 mt-3 text-sm" style="color:var(--m5)">
+<time datetime="2026-05-22">2026-05-22</time>
+<span class="dot-sep"></span>
+<div class="flex flex-wrap gap-2">
+<a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">读书</a>
+<a href="#" class="text-xs px-2 py-0.5 rounded transition-colors" style="background:var(--m2);color:var(--m5)">随笔</a>
+</div>
+</div>
+</header>
+<div class="post-body">
+<p>费尔南多·佩索阿是葡萄牙人，在一家公司做小职员，一辈子没怎么离开过里斯本。他死后别人才发现，他用各种笔名写了上万页的东西。</p>
+<p>《惶然录》是其中一本。准确地说不是书，是一堆零散的日记和随笔。他给自己取了个笔名叫"贝尔纳多·索阿雷斯"，这本书就是索阿雷斯写的。</p>
+<h2>关于办公室</h2>
+<p>他写办公室写得特别好。不是那种抱怨式的写，是带着一种奇怪的温柔。"我所在的办公室，有一种死寂的愉快。"</p>
+<p>他把单调重复的工作写成了一种修行。每天坐电车上班，坐在同一张桌子前，处理同样的文件。看起来什么都没发生，但他的脑子里装着一整个宇宙。</p>
+<h2>做梦的人</h2>
+<p>"我从不做梦，我就是梦。"这句话很佩索阿。他不觉得梦和现实是对立的，他觉得活着本身就是在做梦。</p>
+<p>读这本书的时候，经常分不清他是在写自己还是在写你。因为他说的事你大概率都想过——觉得自己不够好、不知道活着为了什么、在人群中感到孤独。</p>
+<h2>最后</h2>
+<p>这本书没有结尾。就是戛然而止了。据说佩索阿本来就没写完。人生大概也是这样——不是每个故事都要有结局的。</p>
+<p>我把它放在包里，有空就翻两页。像随身带了一个安静的朋友。</p>
+</div>
+</main>
+<footer class="border-t mt-10" style="border-color:var(--m2)">
+<div class="max-w-4xl mx-auto px-5 py-8 text-right">
+<p class="text-xs tracking-wide pr-1" style="color:var(--m5)">&copy; <span id="year"></span> 泪痣</p>
+<p class="text-xs mt-1.5 italic pr-1" style="color:var(--m5)">写得慢一点，想得久一点。</p>
+</div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>
